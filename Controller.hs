@@ -34,4 +34,4 @@ update velocity time DUp = over _y (+ (velocity * time))
 update velocity time DDown = over _y (flip (-) (velocity * time))
 
 step :: Float -> Model -> Model
-step time model = updatePosition (update 100 time $ direction model) model
+step time model = updatePosition (update 1 time $ direction model) model

@@ -4,6 +4,7 @@ import Graphics.Gloss.Data.Picture
 import Graphics.Gloss.Data.Color
 
 import Model
+import Coordinate
 
 box :: Point -> Path
 box point@(x, y) =
@@ -17,4 +18,4 @@ view :: Model -> Picture
 view model = shape
   where
     shape = color green $ polygon path
-    path = box $ position model
+    path = box $ (fromCoord . position) model
