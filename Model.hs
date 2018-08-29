@@ -8,5 +8,5 @@ data Model = Model
 
 initialState :: Model
 initialState = Model
-  { position = (200, 200)
+  { position = (0, 0)
   }
