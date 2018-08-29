@@ -14,7 +14,7 @@ main :: IO ()
 main = play
   display
   black
-  10
+  60
   initialState
   view
   input
