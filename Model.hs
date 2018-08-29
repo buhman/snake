@@ -1,8 +1,12 @@
 module Model where
 
-type Model = Model
-  { position :: (Int, Int)
+import Graphics.Gloss.Data.Picture
+
+data Model = Model
+  { position :: Point
   }
 
 initialState :: Model
-initialState = 0
+initialState = Model
+  { position = (200, 200)
+  }
